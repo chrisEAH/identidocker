@@ -4,12 +4,12 @@ identidock:
     - "9090"
   environment:
     ENV: PROD
-    links:
-      - dnmonster
-      - redis
+  links:
+    - dnmonster
+    - redis
 
 dnmonster:
   image: amouat/dnmonster:1.0
 
 redis:
-image: redis:3.0
+  image: redis:3.0
