@@ -8,7 +8,7 @@ COPY cmd.sh /
 
 EXPOSE 9090 9191
 
-RUN sudo chmod +x ./cmd.sh
+RUN chmod +x /cmd.sh
 
 USER uwsgi
 
