@@ -7,6 +7,9 @@ COPY app /app
 COPY cmd.sh /
 
 EXPOSE 9090 9191
+
+sudo chmod +x ./cmd.sh
+
 USER uwsgi
 
 CMD ["/cmd.sh"]
